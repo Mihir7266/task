@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    
+
+}
+table{
+    table-layout:auto;
+   border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+   
+}
+th,td{
+    
+    border: 2px solid black;
+    padding: 10px;
+    
+      
+}
+tr:nth-child(even){
+    background-color: #D6EEEE;
+}

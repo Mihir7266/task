@@ -87,3 +87,96 @@ footer {
     padding: 20px 0;
     
 }
+/* Hamburger menu toggle setup */
+.menu-toggle {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #222;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.menu a:hover {
+  background-color: #444;
+}
+
+#toggle-menu:checked ~ .menu {
+  display: flex;
+}
+.Head{
+      background-color: #0b3d91;
+      color: white;
+      padding: 20px 0px;
+      
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #0b3d91;
+      margin-top: 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eaeaea;
+      font-size: 14px;
+    }
