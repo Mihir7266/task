@@ -81,7 +81,7 @@ pre{
     max-width: 300px;
 }
 footer {
-    background-color: #1e2a38;
+    background-color: #1e2a38;  
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -146,7 +146,7 @@ footer {
     }
 
     .container {
-      width: 90%;
+      
       max-width: 1200px;
       margin: 40px auto;
     }
