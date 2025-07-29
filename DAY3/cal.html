@@ -43,7 +43,11 @@
     function div() {
       var a = +document.getElementById("num1").value;
       var b = +document.getElementById("num2").value;
-        document.getElementById("result").innerHTML = "Result: " + (a / b);
+      if(b == 0){
+          document.getElementById("result").innerHTML = "can not devided by zero";
+      }else{
+      document.getElementById("result").innerHTML = "Result: " + (a / b);
+      }
     }
   </script>
 
