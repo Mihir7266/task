@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "John Doe"; 
+        let carName = 'mihir'
+        document.getElementById("demo").innerHTML = text +""+ carName;
+    </script>
+
+    <hr>
+
+    <p id="demo1"></p>
+    <script>
+        let text1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        document.getElementById("demo1").innerHTML = text1.length
+    </script>
+
+    <hr>
+
+    <p id="demo2"></p>
+
+    <script>
+        var text2 = "HELLO WORLD";
+        document.getElementById("demo2").innerHTML = text2.charAt(2);
+    </script>
+
+    <hr>
+
+    <p id="demo3"></p>
+
+    <script>
+        var text3 = "HELLO WORLD";
+        document.getElementById("demo3").innerHTML = text3.charCodeAt(0);
+    </script>
+
+    <hr>
+
+    <p id="demo4"></p>
+
+    <script>
+        var text4 = "HELLO WORLD";
+        let code = text4.codePointAt(0);
+        document.getElementById("demo4").innerHTML = text4.codePointAt(0);
+    </script>
+
+    <hr>
+
+    <p id="demo5"></p>
+
+    <script>
+        const name = "HELLOWORLD";
+        let letter = name.at(1)
+        document.getElementById("demo5").innerHTML = letter;
+    </script>
+
+    <hr>
+
+    <p id="demo6"></p>
+
+    <script>
+        let text5 = "Hello";
+        let text6 = "World!";
+        let text7 = text5.concat(" ",text6);
+        document.getElementById("demo6").innerHTML = text7;
+    </script>
+
+    <hr>
+
+    <p id="demo7"></p>
+
+    <script>
+        let text8 = "Apple, Banana, Kiwi";
+        let part = text8.slice(7,13);
+        document.getElementById("demo7").innerHTML = part; 
+    </script>
+
+    <hr>
+
+    <p id="demo8">hello world</p>
+
+    <script>
+        
+        let text9 = document.getElementById("demo8").innerHTML;
+        document.getElementById("demo8").innerHTML =text9.toUpperCase();
+
+
+    </script>
+
+    <hr>
+
+    <p id="demo9"></p>
+
+	<script>
+		let text10 = "Hello world!";
+		let result = text10.isWellFormed();
+
+		document.getElementById("demo9").innerHTML = result;
+	</script>
+
+    <hr>
+
+    <p id="demo10"></p>
+
+	<script>
+		let text11 = "Hello world! \uD800";
+		let result1 = text11.toWellFormed();
+
+		document.getElementById("demo10").innerHTML = result1;
+	</script>
+
+    <hr>
+
+    <p id="demo11"></p>
+
+	<script>
+		let text12 = "     Hello World!     ";
+		let text13 = text12.trim();
+
+		document.getElementById("demo11").innerHTML =
+		"Length text12 = " + text12.length + "<br>Length text13 = " + text13.length;
+	</script>
+
+    <hr>
+
+    <p id="demo12"></p>
+
+	<script>
+		let text14 = "5";
+		text15 = text14.padStart(4,"0");
+
+		document.getElementById("demo12").innerHTML = text15;
+	</script>
+
+    <hr>
+
+    <h3>for number</h3>
+    <p id="demo13"></p>
+    
+
+	<script>
+		let numb = 5;
+		let text16 = numb.toString();
+		document.getElementById("demo13").innerHTML = text16.padStart(4,0);
+	</script>
+
+    <hr>
+
+    <p id="demo14"></p>
+
+	<script>
+		let text17 = "Hello world!";
+		let result3 = text17.repeat(2);
+
+		document.getElementById("demo14").innerHTML = result3;
+	</script>
+
+    <hr>
+
+    <p id="demo15">Please visit Microsoft!</p>
+
+	<script>
+
+  		let text18 = document.getElementById("demo15").innerHTML;
+  		document.getElementById("demo15").innerHTML =
+  		text18.replace("Microsoft","W3Schools");
+
+	</script>
+
+
+
+
+
+</body>
+</html>
+
