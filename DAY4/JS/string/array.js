@@ -109,3 +109,45 @@ function myFunction(value, index, array){
 //findlast() method
 const temp = [27, 28, 30, 40, 42, 35, 30];
 console.log(temp.findLast(x => x > 40));
+
+//The sort() Method
+console.log("The sort() Method")
+const fruits17 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits16.sort())
+
+//The reverse() method
+console.log("The reverse() method")
+const fruits18 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits18.reverse())
+
+//toshorted method
+const months = ["Jan", "Feb", "Mar", "Apr"];
+console.log(months.toSorted())
+
+//toreverse() method
+const months1 = ["Jan", "Feb", "Mar", "Apr"];
+console.log(months1.toReversed())
+
+//number sort
+const num5 = [5,3,6,8,1,2,4];
+console.log(num5.sort())
+
+const num6 = [5,3,6,8,1,2,4];
+console.log(num6.sort(function(){return 0.5 - Math.random}))
+
+//lowest and highest
+const num7 = [5,3,6,8,1,2,4];
+const min = num7.sort(function(a,b){return a - b})
+console.log("The Lowest Number is" +min[0])
+
+//sum
+const num8 = [5,3,6,8,1,2,4];
+console.log(num8.reduce(function(total, value, index, array){return total + value}))
+
+//all over 18
+const num9 = [5,3,6,8,1,2,4];
+console.log(num9.every(function(total, value, index, array){return value > 18}))
+
+//number * 2
+const num10 = [5,3,6,8,1,2,4];
+console.log(Array.from(num10, (x) => x * 2))
