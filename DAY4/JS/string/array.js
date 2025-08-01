@@ -151,3 +151,5 @@ console.log(num9.every(function(total, value, index, array){return value > 18}))
 //number * 2
 const num10 = [5,3,6,8,1,2,4];
 console.log(Array.from(num10, (x) => x * 2))
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
